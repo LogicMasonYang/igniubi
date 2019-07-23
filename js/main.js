@@ -47,18 +47,11 @@ $(document).ready(function(){
 	//各奖项对应的旋转角度及中奖公告内容
 	function probability(){
 		//获取随机数
-		var num = parseInt(Math.random()*(7 - 0 + 0) + 0);
-		while(num==1){
-			num = parseInt(Math.random()*(7 - 0 + 0) + 0);
-		}
-		while(num==0){
-			num = parseInt(Math.random()*(7 - 0 + 0) + 0);
-		}
-		if(num==3){
-			num = parseInt(Math.random()*(7 - 0 + 0) + 0);
-		}
-		if(num==3){
-			num = parseInt(Math.random()*(7 - 0 + 0) + 0);
+		var num = parseInt(Math.random()*(100 - 0 + 0) + 0);
+		if(num==0){
+			num=2;
+		}else{
+			num = parseInt(Math.random()*(7 - 3 + 1) + 3);
 		}
 		//概率
 		if ( num == 0 ) {
@@ -73,12 +66,12 @@ $(document).ready(function(){
 		//概率
 		else if ( num == 2 ) {
 			angles = 2160 * rotNum + 1890;
-			notice = info[6] + info1[6];
+			notice = info[5] + info1[5];
 		}
 		//概率
 		else if ( num == 3 ) {
 			angles = 2160 * rotNum + 1935;
-			notice = info[5] + info1[5];
+			notice = info[6] + info1[6];
 		}
 		//概率
 		else if ( num == 4 ) {
