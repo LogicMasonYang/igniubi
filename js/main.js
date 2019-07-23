@@ -66,7 +66,7 @@ $(document).ready(function(){
 		//概率
 		else if ( num == 2 ) {
 			angles = 2160 * rotNum + 1890;
-			notice = info[5] + info1[5];
+			notice = info[4] + info1[4];
 		}
 		//概率
 		else if ( num == 3 ) {
@@ -76,7 +76,7 @@ $(document).ready(function(){
 		//概率
 		else if ( num == 4 ) {
 			angles = 2160 * rotNum + 1980;
-			notice = info[4] + info1[4];
+			notice = info[5] + info1[5];
 		}
 		//概率
 		else if ( num == 5 ) {
