@@ -9,8 +9,8 @@ $(document).ready(function(){
 	var notice = null;
 	//转盘初始化
 	var color = ["#626262","#787878","rgba(0,0,0,0.5)","#DCC722","white","#FF4350"];
-	var info = ["谢谢参与","  送你一个","  死亡"," 洛丽塔","  大红包"," 送你一个"," 小红包"," 杜 克"];
-	var info1 = ['再接再厉','  么么哒','  芭比粉','   小裙子','     520元','  么么哒','     52元','    套装']
+	var info = ["超大红包","  送你一个","  死亡"," 洛丽塔","  大红包"," 送你一个"," 小红包"," 杜 克"];
+	var info1 = ['1888元','  么么哒','  芭比粉','   小裙子','     520元','  么么哒','     52元','    套装']
 	canvasRun();
 	$('#tupBtn').bind('click',function(){
 		if (clickNum >= 1) {
@@ -49,6 +49,9 @@ $(document).ready(function(){
 		//获取随机数
 		var num = parseInt(Math.random()*(7 - 0 + 0) + 0);
 		while(num==1){
+			num = parseInt(Math.random()*(7 - 0 + 0) + 0);
+		}
+		while(num==0){
 			num = parseInt(Math.random()*(7 - 0 + 0) + 0);
 		}
 		if(num==3){
