@@ -65,17 +65,17 @@ $(document).ready(function(){
 		}
 		//概率
 		else if ( num == 2 ) {
-			angles = 2160 * rotNum + 1890;
+			angles = 2160 * rotNum + 1980;
 			notice = info[4] + info1[4];
 		}
 		//概率
 		else if ( num == 3 ) {
-			angles = 2160 * rotNum + 1935;
+			angles = 2160 * rotNum + 1890;
 			notice = info[6] + info1[6];
 		}
 		//概率
 		else if ( num == 4 ) {
-			angles = 2160 * rotNum + 1980;
+			angles = 2160 * rotNum + 1935;
 			notice = info[5] + info1[5];
 		}
 		//概率
